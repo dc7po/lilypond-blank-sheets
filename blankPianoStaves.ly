@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.24.4"
 
 #(set-global-staff-size 20)
 #(ly:set-option 'point-and-click #f)
@@ -27,8 +27,8 @@ emptymusic = {
 }
 
 \new Score \with {
-  \override TimeSignature #'transparent = ##t
-  defaultBarType = #""
+  \override TimeSignature.transparent = ##t
+  measureBarType = #""
   \remove Bar_number_engraver
 }
 <<
@@ -37,4 +37,3 @@ emptymusic = {
     \new Staff \new Voice { \clef "bass" \emptymusic }
   >>
 >>
-
